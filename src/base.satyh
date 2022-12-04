@@ -28,8 +28,28 @@ use Promise
 use Array
 use Random
 use Format
+use Path
 use Color
+use Graphics
+use VDecoSet
 use Length
+use Inline
+use Block
+use Font
+use CrossRef
+use Page
+use Pager
+use Lexer
+use TypesetSatysfiIt
+use TypesetFont
+use TypesetTabular
+use TypesetItemize
+use TypesetListingDesignFun
+use TypesetDerive
+use TypesetDeriveDSL
+use DeriveConfig
+use DeriveLine
+use UtilSub
 
 module Base = struct
   include Util
@@ -62,6 +82,30 @@ module Base = struct
   module Array = Array
   module Random = Random
   module Format = Format
+  module Path = Path
   module Color = Color
+  module Graphics = Graphics
+  module VDecoSet = VDecoSet
   module Length = Length
+  module Inline = Inline
+  module Block = Block
+  module Font = Font
+  module CrossRef = CrossRef
+  module Page = Page
+  module Pager = Pager
+  module Lexer = Lexer
+
+  module Typeset = struct
+    module SatysfiIt = TypesetSatysfiIt
+    module Font = TypesetFont
+    module Tabular = TypesetTabular
+    module Itemize = TypesetItemize
+    module ListingDesignFun = TypesetListingDesignFun
+    module Derive = TypesetDerive
+    module DeriveConfig = DeriveConfig
+    module DeriveLine = DeriveLine
+    module DeriveDSL = TypesetDeriveDSL
+  end
+
+  module UtilSub = UtilSub
 end

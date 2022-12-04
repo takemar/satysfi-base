@@ -1,4 +1,4 @@
-module UtilSubText :> sig
+module UtilSub :> sig
 
   val finish : string
 
